@@ -13,9 +13,12 @@
     @foreach (var post in listModel.Posts)
     {
         <article class="post-list d-flex">
+            @if (!string.IsNullOrEmpty(post.Cover))
+            {
             <figure class="post-list-cover">
                 <img class="post-list-img" src="@post.Cover" alt="@post.Title">
             </figure>
+            }
             <section class="post-list-details">
                 <h2 class="post-list-title">
                     <a class="post-list-link" href="~/posts/@post.Slug">@post.Title</a>

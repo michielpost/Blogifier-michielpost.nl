@@ -15,9 +15,12 @@
     {
         <div class="col">
             <article class="post-grid d-flex flex-column">
+                @if (!string.IsNullOrEmpty(post.Cover))
+                {
                 <figure class="post-grid-cover">
                     <img class="post-grid-img" src="@post.Cover" alt="@post.Title">
                 </figure>
+                }
                 @if(post.Categories != null)
                 {
                 <div class="post-grid-cats">
