@@ -29,6 +29,13 @@ namespace michiel.mvc.Controllers
             _logger = logger;
         }
 
+        [HttpGet("Default.aspx")]
+        [HttpGet("Portfolio/Default.aspx")]
+        [HttpGet("Contact.aspx")]
+        public IActionResult Default([FromRoute] int id)
+        {
+            return RedirectPermanent($"/");
+        }
 
         [HttpGet("PostDetail_{id}.aspx")]
         public IActionResult PostDetail([FromRoute]int id)
@@ -44,7 +51,7 @@ namespace michiel.mvc.Controllers
 
         }
 
-        [HttpGet("importold")]
+        //[HttpGet("importold")]
         public async Task<IActionResult> ImportOld()
         {
             var records = LoadCsv();
