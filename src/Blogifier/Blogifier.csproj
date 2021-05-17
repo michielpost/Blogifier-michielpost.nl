@@ -3,6 +3,7 @@
 	<PropertyGroup>
 		<TargetFramework>net5.0</TargetFramework>
 		<CopyRazorGenerateFilesToPublishDirectory>true</CopyRazorGenerateFilesToPublishDirectory>
+		<UserSecretsId>d64f6c3b-d2b0-4ce2-9c06-f2b2333ee7cb</UserSecretsId>
 	</PropertyGroup>
 
 	<ItemGroup>
