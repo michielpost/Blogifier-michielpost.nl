@@ -174,8 +174,8 @@ namespace Blogifier.Core.Providers
             post.PostViews++;
             await _db.SaveChangesAsync();
 
-            model.Related = await Search(new Pager(1), model.Post.Title, 0, "PF", true);
-            model.Related = model.Related.Where(r => r.Id != model.Post.Id).ToList();
+            //model.Related = await Search(new Pager(1), model.Post.Title, 0, "PF", true);
+            //model.Related = model.Related.Where(r => r.Id != model.Post.Id).ToList();
 
             return await Task.FromResult(model);
         }
