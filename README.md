@@ -7,8 +7,8 @@
 
 <h3 align="center">Blogifier</h3>
 <p align="center">
-    Blogifier is an open-source publishing platform written in .NET 5.0 and Blazor WebAssembly.<br>
-    Right now with Blogifier, you can make a personal blog, and more features are under development.<br><br>
+    Blogifier is self hosted open source publishing platform written in ASP.NET and Blazor WebAssembly.<br>
+    Right now Blogifier can be used as a personal or group blog, and more features are under development.<br><br>
     <a href="https://blogifier.net/"><b>Official Website »</b></a>
     &nbsp;&nbsp;
     <a href="https://demo.blogifier.net/"><b>Live Demo »</b></a>
@@ -21,17 +21,12 @@
 </p>
 
 <br><br>
-> **Blogifier is under development** <br>
-Code in the main branch is under development and some features are not yet implemented and may not work as expected.
-If you are looking for a stable application, please use [latest release](https://github.com/blogifierdotnet/Blogifier/releases).
-The latest stable source code is in the [master branch](https://github.com/blogifierdotnet/Blogifier/tree/5c9bab69788a1f7a0bd82c6a864e159eff5b1b72). Please note that newest code uses Blazor Web Assembly and not compatible with previous versions.
 
-<br><br>
 ## Installation
 
 This version is built and compiled, and ready to use:
 
-1. .NET Core Runtime 5.0 or above must be installed on your host server.
+1. .NET Core Runtime (currently 6.0) must be installed on your host server.
 2. [Download](https://github.com/blogifierdotnet/Blogifier/releases) the latest release.
 3. Unzip and copy to your host server.<br>
 4. Restart your website.
@@ -43,7 +38,7 @@ This version is built and compiled, and ready to use:
 ## Development
 If you want to customize the Blogifier, or contribute:
 
-1. [Download](https://dotnet.microsoft.com/download/dotnet/5.0) and Install .NET SDK 5.0 or above.
+1. [Download](https://dotnet.microsoft.com/download/dotnet) and Install .NET SDK.
 2. Download, fork, or clone the repository.
 3. Open the project with your favorite IDE (VS Code, Visual Studio, Atom, etc).
 4. Run the app with your IDE or these commands:

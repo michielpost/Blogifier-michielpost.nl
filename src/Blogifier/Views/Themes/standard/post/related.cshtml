@@ -32,13 +32,13 @@
     <div class="row">
         @foreach (var post in _related)
         {
-        <div class="col-12 col-md mb-4 mb-md-0">
-            <article class="post-grid d-flex flex-column">
+                <div class="col-12 col-md mb-4 mb-md-0">
+                    <article class="post-grid d-flex flex-column">
                 @if (!string.IsNullOrEmpty(post.Cover))
                 {
                     <figure class="post-grid-cover" aria-hidden="true">
-                        <img class="post-grid-img" src="@post.Cover" alt="@post.Title">
-                    </figure>
+                        <img class="post-grid-img" src="~/@post.Cover" alt="@post.Title">
+                     </figure>
                 }
                 @if (post.Categories != null)
                 {

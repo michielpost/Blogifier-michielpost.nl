@@ -1,6 +1,16 @@
 @inject HttpClient _http
 @inject IStringLocalizer<Resource> _localizer
-
+<style>
+  .editor-add-category {
+    color: #FFF;
+    overflow: hidden;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 0.95em;
+  }
+</style>
 <div class="d-flex">
     @if (PostCategories != null)
     {
@@ -14,7 +24,7 @@
             </div>
         }
     }
-    <input type="text" id="add_category_control" @bind="Tag" @onkeyup="KeyPressed" name="tagItem" placeholder="@_localizer["add-category"]" />
+    <input type="text" id="add_category_control" class="editor-add-category" @bind="Tag" @onkeyup="KeyPressed" name="tagItem" placeholder="@_localizer["add-category"]" />
 </div>
 
 @code {

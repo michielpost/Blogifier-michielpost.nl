@@ -7,7 +7,7 @@
 @inject BlogStateProvider _stateprovider
 @implements IDisposable
 
-<PageTitle Title="@_localizer["new-post"]" />
+<BlogPageTitle Title="@_localizer["new-post"]" />
 
 @if (Post != null)
 {
@@ -136,6 +136,7 @@
        Post.PostType = _stateprovider.PostType;
 
        Post.Cover = await _jsruntime.InvokeAsync<string>("commonJsFunctions.getSrcValue", "postCover");
+       Post.Cover = Post.Cover.Replace(_navigation.BaseUri, "");
 
        if(string.IsNullOrEmpty(Post.Cover))
            Post.Cover = Constants.DefaultCover;
