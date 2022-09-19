@@ -146,7 +146,7 @@ namespace Blogifier.Controllers
 				{
 					var item = new SyndicationItem(
 						 post.Title,
-						 post.Description.MdToHtml(),
+						 string.Empty, //post.Description.MdToHtml(),
 						 new Uri(post.Id),
 						 post.Id,
 						 post.Published

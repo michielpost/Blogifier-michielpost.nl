@@ -13,10 +13,12 @@
 <main class="post-detail">
     <article class="post">
 
+        @if (!string.IsNullOrEmpty(postModel.Post.Cover))
+        {
         <figure class="post-cover">
             <img class="post-cover-img" src="~/@cover" alt="@post.Title" aria-hidden="true">
         </figure>
-
+        }
         <header class="post-header post-container">
 
             <h1 class="post-title">@post.Title</h1>

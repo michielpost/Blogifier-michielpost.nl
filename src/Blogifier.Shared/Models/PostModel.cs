@@ -8,6 +8,6 @@ namespace Blogifier.Shared
       public PostItem Post { get; set; }
       public PostItem Older { get; set; }
       public PostItem Newer { get; set; }
-      public IEnumerable<PostItem> Related { get; set; }
+        public IEnumerable<PostItem> Related { get; set; } = new List<PostItem>();
    }
 }

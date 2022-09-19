@@ -18,6 +18,7 @@ namespace Blogifier.Controllers
         }
 
         [Route("sitemap")]
+        [Route("sitemap.xml")]
         [Produces("text/xml")]
         public async Task<IActionResult> Sitemap()
         {
