@@ -1628,23 +1628,23 @@
           "pt-BR/Blogifier.Shared.resources.dll": {
             "locale": "pt-BR"
           },
+          "ur-PK/Blogifier.Shared.resources.dll": {
+            "locale": "ur-PK"
+          },
           "es/Blogifier.Shared.resources.dll": {
             "locale": "es"
-          },
-          "sv-SE/Blogifier.Shared.resources.dll": {
-            "locale": "sv-SE"
-          },
-          "fa/Blogifier.Shared.resources.dll": {
-            "locale": "fa"
           },
           "el-GR/Blogifier.Shared.resources.dll": {
             "locale": "el-GR"
           },
+          "fa/Blogifier.Shared.resources.dll": {
+            "locale": "fa"
+          },
           "ru/Blogifier.Shared.resources.dll": {
             "locale": "ru"
           },
-          "ur-PK/Blogifier.Shared.resources.dll": {
-            "locale": "ur-PK"
+          "sv-SE/Blogifier.Shared.resources.dll": {
+            "locale": "sv-SE"
           }
         }
       }
