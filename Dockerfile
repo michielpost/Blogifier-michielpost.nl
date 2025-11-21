@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/aspnet:6.0 as base
+FROM mcr.microsoft.com/dotnet/aspnet:10.0 as base
 
 # Copy everything else and build
 COPY ./ /opt/blogifier

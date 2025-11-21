@@ -3,8 +3,6 @@ using Blogifier.Core.Providers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
-using System;
 
 namespace Blogifier.Core.Extensions
 {
@@ -21,8 +19,8 @@ namespace Blogifier.Core.Extensions
 			if (section.GetValue<string>("DbProvider") == "SqlServer")
 				services.AddDbContext<AppDbContext>(o => o.UseSqlServer(conn));
 
-			if (section.GetValue<string>("DbProvider") == "Postgres")
-				services.AddDbContext<AppDbContext>(o => o.UseNpgsql(conn));
+			//if (section.GetValue<string>("DbProvider") == "Postgres")
+			//	services.AddDbContext<AppDbContext>(o => o.UseNpgsql(conn));
 
 			//TODO: this is not tested
 			if (section.GetValue<string>("DbProvider") == "MySql")
